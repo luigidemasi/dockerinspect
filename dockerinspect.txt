@@ -1,18 +1,18 @@
 [
     {
-        "Id": "sha256:01977bf201a1fd19584b7aeb22097878b474034243c419f2f416351d4f4a58a3",
+        "Id": "sha256:b3b97baa33afc4647e445b287d86b2ce0e69720ff0109df65c7fad29bee426fc",
         "RepoTags": [
             "image-registry-openshift-image-registry.apps.foo-46ga-a.openshift-aws.rhocf-dev.net:443/streams/fuse7-java-openshift:1.9"
         ],
         "RepoDigests": [
-            "image-registry-openshift-image-registry.apps.foo-46ga-a.openshift-aws.rhocf-dev.net:443/streams/fuse7-java-openshift@sha256:865cbc924d9b62a8681537d66dc2b0d5977e4ad9d2cd8469cadc6e2ea9d9fa3e"
+            "image-registry-openshift-image-registry.apps.foo-46ga-a.openshift-aws.rhocf-dev.net:443/streams/fuse7-java-openshift@sha256:05896222e16bd36900a4dba806ef6432c774f4dcfa32d19fffdf1ad495e6c564"
         ],
         "Parent": "",
         "Comment": "",
-        "Created": "2021-02-24T10:08:05.681693Z",
+        "Created": "2021-03-18T18:16:03.042035Z",
         "Container": "",
         "ContainerConfig": {
-            "Hostname": "0324fc3b155f",
+            "Hostname": "b621bb5542e9",
             "Domainname": "",
             "User": "185",
             "AttachStdin": false,
@@ -53,6 +53,9 @@
                 "JBOSS_CONTAINER_MAVEN_S2I_MODULE=/opt/jboss/container/maven/s2i",
                 "JAVA_DATA_DIR=/deployments/data",
                 "JBOSS_CONTAINER_JAVA_RUN_MODULE=/opt/jboss/container/java/run",
+                "LD_PRELOAD=libnss_wrapper.so",
+                "NSS_WRAPPER_GROUP=/etc/group",
+                "NSS_WRAPPER_PASSWD=/home/jboss/passwd",
                 "JBOSS_CONTAINER_JAVA_S2I_MODULE=/opt/jboss/container/java/s2i",
                 "JBOSS_IMAGE_NAME=redhat-openjdk-18/openjdk18-openshift",
                 "JBOSS_IMAGE_VERSION=1.8",
@@ -72,15 +75,15 @@
                 "USER [185]"
             ],
             "ArgsEscaped": true,
-            "Image": "sha256:bd14ae3e18fd83ad3959633f85154cbf5a157a00e3dc27794216faef9372f2f0",
+            "Image": "sha256:a49bd8f630df17771bb5ffcbb59aeaeff8f1391456fd7dd257ec0ffdeeaca36e",
             "Volumes": null,
             "WorkingDir": "/home/jboss",
             "Entrypoint": null,
             "OnBuild": [],
             "Labels": {
                 "architecture": "x86_64",
-                "build-date": "2021-02-24T10:06:25.042166",
-                "com.redhat.build-host": "cpt-1008.osbs.prod.upshift.rdu2.redhat.com",
+                "build-date": "2021-03-18T18:14:46.811739",
+                "com.redhat.build-host": "cpt-1001.osbs.prod.upshift.rdu2.redhat.com",
                 "com.redhat.component": "fuse-java-openshift-container",
                 "com.redhat.deployments-dir": "/deployments",
                 "com.redhat.dev-mode": "JAVA_DEBUG:false",
@@ -104,9 +107,9 @@
                 "org.jboss.product": "openjdk",
                 "org.jboss.product.openjdk.version": "1.8.0",
                 "org.jboss.product.version": "1.8.0",
-                "release": "20",
+                "release": "26",
                 "summary": "Build and run Spring Boot-based integration applications",
-                "url": "https://access.redhat.com/containers/#/registry.access.redhat.com/fuse7/fuse-java-openshift/images/1.9-20",
+                "url": "https://access.redhat.com/containers/#/registry.access.redhat.com/fuse7/fuse-java-openshift/images/1.9-26",
                 "usage": "https://access.redhat.com/documentation/en-us/red_hat_jboss_middleware_for_openshift/3/html/red_hat_java_s2i_for_openshift/",
                 "vcs-ref": "37fcea81dbf84cedfb235a6dd0ec256ddcfa4211",
                 "vcs-type": "git",
@@ -117,7 +120,7 @@
         "DockerVersion": "1.13.1",
         "Author": "",
         "Config": {
-            "Hostname": "0324fc3b155f",
+            "Hostname": "b621bb5542e9",
             "Domainname": "",
             "User": "185",
             "AttachStdin": false,
@@ -158,6 +161,9 @@
                 "JBOSS_CONTAINER_MAVEN_S2I_MODULE=/opt/jboss/container/maven/s2i",
                 "JAVA_DATA_DIR=/deployments/data",
                 "JBOSS_CONTAINER_JAVA_RUN_MODULE=/opt/jboss/container/java/run",
+                "LD_PRELOAD=libnss_wrapper.so",
+                "NSS_WRAPPER_GROUP=/etc/group",
+                "NSS_WRAPPER_PASSWD=/home/jboss/passwd",
                 "JBOSS_CONTAINER_JAVA_S2I_MODULE=/opt/jboss/container/java/s2i",
                 "JBOSS_IMAGE_NAME=redhat-openjdk-18/openjdk18-openshift",
                 "JBOSS_IMAGE_VERSION=1.8",
@@ -174,15 +180,15 @@
                 "/usr/local/s2i/run"
             ],
             "ArgsEscaped": true,
-            "Image": "cf058e75a793779f675ed9e740b93f779c61118d84eb6557d5d2d7aa63c3254c",
+            "Image": "8dd6ef9dd9a96e2a3213392ebc483e8b7a6b84019614d8a873ca7b640d7c5862",
             "Volumes": null,
             "WorkingDir": "/home/jboss",
             "Entrypoint": null,
             "OnBuild": [],
             "Labels": {
                 "architecture": "x86_64",
-                "build-date": "2021-02-24T10:06:25.042166",
-                "com.redhat.build-host": "cpt-1008.osbs.prod.upshift.rdu2.redhat.com",
+                "build-date": "2021-03-18T18:14:46.811739",
+                "com.redhat.build-host": "cpt-1001.osbs.prod.upshift.rdu2.redhat.com",
                 "com.redhat.component": "fuse-java-openshift-container",
                 "com.redhat.deployments-dir": "/deployments",
                 "com.redhat.dev-mode": "JAVA_DEBUG:false",
@@ -206,9 +212,9 @@
                 "org.jboss.product": "openjdk",
                 "org.jboss.product.openjdk.version": "1.8.0",
                 "org.jboss.product.version": "1.8.0",
-                "release": "20",
+                "release": "26",
                 "summary": "Build and run Spring Boot-based integration applications",
-                "url": "https://access.redhat.com/containers/#/registry.access.redhat.com/fuse7/fuse-java-openshift/images/1.9-20",
+                "url": "https://access.redhat.com/containers/#/registry.access.redhat.com/fuse7/fuse-java-openshift/images/1.9-26",
                 "usage": "https://access.redhat.com/documentation/en-us/red_hat_jboss_middleware_for_openshift/3/html/red_hat_java_s2i_for_openshift/",
                 "vcs-ref": "37fcea81dbf84cedfb235a6dd0ec256ddcfa4211",
                 "vcs-type": "git",
@@ -218,24 +224,24 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 506630586,
-        "VirtualSize": 506630586,
+        "Size": 545067929,
+        "VirtualSize": 545067929,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/2a2b26c68751f23f294848a5cc21e2cee9c684c4f75000dc283700d00aad83da/diff:/var/lib/docker/overlay2/5ca1ca77cbea9aee160b9dea07fc48f892820bd0e858f35ee8c2c52e1c0db874/diff:/var/lib/docker/overlay2/b102fbab808f4ddcd400231556420e32ab20876995f693df10dc43acaf28fb2a/diff",
-                "MergedDir": "/var/lib/docker/overlay2/ea3a8a1ac89bd421f7ffda02b4626ff4350ef87e0b3bbfed55255a1dfbb1bce2/merged",
-                "UpperDir": "/var/lib/docker/overlay2/ea3a8a1ac89bd421f7ffda02b4626ff4350ef87e0b3bbfed55255a1dfbb1bce2/diff",
-                "WorkDir": "/var/lib/docker/overlay2/ea3a8a1ac89bd421f7ffda02b4626ff4350ef87e0b3bbfed55255a1dfbb1bce2/work"
+                "LowerDir": "/var/lib/docker/overlay2/31544db8617bb5d4f0eaf2a47c5b915db00438710a3ffdb049f95f35ceba2599/diff:/var/lib/docker/overlay2/9d8628c3fc8510a275cda0a10c4342f42347e002a1cffe44f127bb381bbd02b5/diff:/var/lib/docker/overlay2/ef68e1fa986112ac84f9fe50ceb270b90b7f7a25b6537de07cc2686901770582/diff",
+                "MergedDir": "/var/lib/docker/overlay2/b5886b8a821cbe0d3e2abed1a52b3d5705a0b042889838a36125b4ee3320238f/merged",
+                "UpperDir": "/var/lib/docker/overlay2/b5886b8a821cbe0d3e2abed1a52b3d5705a0b042889838a36125b4ee3320238f/diff",
+                "WorkDir": "/var/lib/docker/overlay2/b5886b8a821cbe0d3e2abed1a52b3d5705a0b042889838a36125b4ee3320238f/work"
             },
             "Name": "overlay2"
         },
         "RootFS": {
             "Type": "layers",
             "Layers": [
-                "sha256:f91d01e7b88f8f9e151243e35e2b2af90dda72fc326330bfd5cb67e2c8491cf8",
-                "sha256:58abc5089e711c65bb2c19c94de7e84971711b33a1728dc09c98bb3c0619ba9c",
-                "sha256:370d3b28cd2a2a324b534b479047126d0794eae32f771e615c0b047cc604c6d9",
-                "sha256:49a55d0291771d17a3de6c55d23a6827519ba8a3679922e9d7070c17ae99de6d"
+                "sha256:ed4a677ce51f406b205312fefd67af54ee9dab18142787d9dfb001d05df87149",
+                "sha256:cd634a357ec68e795b054ca8d24816aac6056f16e05838705bc9e52e2685a6fb",
+                "sha256:3aea3279b64c86c2c595fe04e6b9213b73826e348c739982366cd01a2a9b9676",
+                "sha256:9aece4fa859b95ba1df28d244f2fea2e0495c89fbaba3701fff5378c0a41c586"
             ]
         },
         "Metadata": {
